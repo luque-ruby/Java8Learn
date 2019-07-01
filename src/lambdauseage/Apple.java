@@ -1,3 +1,5 @@
+package lambdauseage;
+
 /**
  * Created by Administrator on 2019/5/17.
  */
@@ -28,7 +30,7 @@ public class Apple {
 
     @Override
     public String toString() {
-        return "Apple{" +
+        return "lambdauseage.Apple{" +
                 "weight=" + weight +
                 ", color='" + color + '\'' +
                 '}';
