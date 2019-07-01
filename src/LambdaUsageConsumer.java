@@ -10,9 +10,9 @@ public class LambdaUsageConsumer {
     public static void main(String[] args) {
         List<Apple> appleList = Arrays.asList(new Apple("green", 120), new Apple("red", 150));
 
-        simpleTestConsumer(appleList, System.out::println);
+//        simpleTestConsumer(appleList, System.out::println);
 
-        simpleBiConsumer(appleList,);
+        simpleBiConsumer(appleList, "XXX: ", (a, s) -> System.out.println(s + a.getColor() + "weight >= " + a.getWeight()));
     }
 
     private static void simpleTestConsumer(List<Apple> apples, Consumer<Apple> consumer) {
